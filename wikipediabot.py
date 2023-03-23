@@ -1,6 +1,11 @@
 import requests, wikipedia, random, pymysql
 from bs4 import BeautifulSoup as bs
 
+HOST = ''
+USER = ''
+PASSWORD = ''
+DATABASE = ''
+
 class WikipediaBot:
   def __init__(self, link, lang):
     langs = {'tk': 'Ýörite:AllPages', 'ru': 'Служебная:Все страницы'}
@@ -51,7 +56,7 @@ class WikipediaBot:
         handler.write(img_data)
     return str(rand_num)+filename
   def save_to_db(self, title, summary, image_path):
-    db = pymysql.connect(host = '95.85.97.67', user='gozle', password='H@mraeV987123654', database='gozle_tm')
+    db = pymysql.connect(host = HOST, user=USER, password=PASSWORD, database=DATABASE)
     cursor = db.cursor()
     sql = f"INSERT INTO `in_wiki` (`title`, `summary`, `image` ) VALUES ({title}, {summary}, {image_path})"
     cursor.execute(sql)
