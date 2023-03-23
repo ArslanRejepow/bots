@@ -1,24 +1,4 @@
-FEED_URLS = [{'url': 'https://turkmenportal.com/rss/tm', 'image' : "enclosure", 'pre': 'https://turkmenportal.com'},
-{'url': 'https://www.atavatan-turkmenistan.com/feed/', 'image':'in_description', 'pre': False},
-{'url': 'https://business.com.tm/rss/tm', 'image': 'enclosure', 'pre': False},
-{'url': 'https://turkmensport.com/feed', 'image': 'in_description', 'pre': False},
-{'url': 'https://turkmengazet.com/feed/', 'image': 'in_description', 'pre': False},
-{'url': 'https://jeyhun.news/tk/feed/', 'image': 'in_description', 'pre': False},
-{'url': 'https://gorogly.com/feed/', 'image': 'in_description', 'pre': False},
-{'url': 'https://www.ylymly.com/feed/', 'image': False, 'pre': False},
-{'url': 'https://okde.com.tm/tm/feed/', 'image': False, 'pre': False},
-{'url': 'https://zamanturkmenistan.com.tm/?feed=rss2', 'image': False, 'pre': False},
-{'url': 'https://www.tdob.gov.tm/feed/', 'image': False, 'pre': False},
-{'url': 'https://www.trt.net.tr/turkmen/all.rss', 'image': False, 'pre': False},
-{'url': 'https://orient.tm/tm/rss', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/syyasat_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/ykdysadyyet_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/jemgyyet_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/ylym_bilim_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/tehnologiya_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/saglyk_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://salamnews.tm/sport_tm.xml', 'image': 'enclosure', 'pre': False},
-{'url': 'https://silkroadtm.jp/tm/rss', 'image': 'enclosure', 'pre': False}]
+FEED_URLS = [{'url': 'RSS URL', 'image' : "IMAGE", 'pre': 'LINK'}]
 
 import feedparser
 import html
